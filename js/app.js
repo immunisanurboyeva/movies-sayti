@@ -1,6 +1,3 @@
-
-
-
 const elList = document.querySelector('.js-list');
 const elSelect = document.querySelector('.js-select');
 const form = document.querySelector('.form')
@@ -12,14 +9,12 @@ function renderList(array) {
     array.forEach((el) => {
 
         // vaqtga doir / start
-
             let vaqt = new Date(el.release_date * 1000)
             let kun = String(vaqt.getDate() ).padStart(2, 0)
             let oy =  String(vaqt.getMonth() + 1).padStart(2, 0)
             let yil = String(vaqt.getFullYear()).padStart(2, 0)
             
             let releaseDate = `${kun}.${oy}.${yil}`
-
         // vaqtga doir / end
 
         let filmJanrlari = "";
@@ -40,7 +35,7 @@ function renderList(array) {
 
                 <p class="card__text"> ${filmJanrlari} </p>
             </div>
-            <a href="./details.html?id=${el.id}"><button> tomosha qilish </button></a>
+            <a href="/html/details.html?id=${el.id}"><button> tomosha qilish </button></a>
         </div>
     </li>
     `;
@@ -55,15 +50,6 @@ elSelect.addEventListener('change', function () {
         const elSelectedMovies =  films.filter( film => film.genres.includes(elSelect.value) )
         renderList(elSelectedMovies);
 
-    // const elSelectedMovies = [];
-
-    // films.forEach(function (el) {
-    //     el.genres.forEach(function (e) {
-    //         if (e === elSelect.value) {
-    //             elSelectedMovies.push(el);
-    //         }
-    //     });
-    // });
 });  
 
 form.addEventListener('submit',e=> e.preventDefault() )
