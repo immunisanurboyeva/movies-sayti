@@ -21,7 +21,7 @@ copyFilms.forEach(film =>{
     
             <div class="main">
                 <div class="main-imgWrapper">
-                    <img src="${film.poster}" alt="film picture" class="film-img">
+                <img src="${film.poster}" alt="film picture" class="film-img">
                 </div>
             <div class="main-rightWrapper">
                 <h2 class="film-name">${film.title}</h2>
@@ -32,16 +32,12 @@ copyFilms.forEach(film =>{
                         <div class="movie-genres">${film.genres}</div>
                         <div class="movie-time">[ ⏲ ${yil} ]</div>
                     </div>
-
                     <div class="movie-overview">${film.overview}</div>
                 </div>
-                
-                            <div class="btn-watch">
-                                <button> watch now </button>
-                            </div>
+                        <div class="btn-watch">
+                        <button> watch now </button>
+                        </div>
             </div>
-
-
         `
     }
 
