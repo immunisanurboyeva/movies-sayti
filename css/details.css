@@ -1,0 +1,134 @@
+:root{
+    --night-indigo: #1b003f;
+    --twilight-purple: #4b0082;
+    --midnight-blue: #191970;
+    --lavende-haze: #e6e6fa;
+    --dusky-blue: #6495ed;
+}
+
+*{
+    bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #0b051dec;
+    color: var(--lavende-haze);
+}
+.container{
+    max-width: 1340px;
+    background: #fff;
+    margin: 0 auto;
+}
+.allWrapper{
+    padding: 30px 70px;
+}
+a{
+    text-decoration:none ;
+    color: aliceblue;
+}
+.header{
+    margin-bottom: 30px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 45px;
+    background: #ffffff0e;
+    border-radius: 20px;
+    padding: 20px 14px;
+    border-bottom: 1px solid #ffffffac;
+    border-top: 1px solid #ffffffac;
+    background: #6494ed1c;
+
+}
+.film-name{
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+}
+.movie-overview{
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    color: rgba(0, 0, 0, 0.732);
+    background: #e3f6ff78;
+    padding: 5px;
+    border-radius: 7px;
+}
+.main-imgWrapper{
+    width: 71rem;
+    height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ffffff81;
+}
+.film-img{
+    transition: 0.35s ease-in-out;
+    width: 400px;
+    height: 550px;
+}
+.film-img:hover{
+    transform: scale(1.03);
+}
+.details-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.movie-genres{
+    font-weight: 600;
+    transform: translate(30px, 0);
+}
+.movie-time{
+    /* text-decoration: underline; */
+    transform: translate(80px, 0);
+    background: #00000081;
+}
+.movie-icon{
+    background: #ffffff;
+    padding: 0.5px 2px;
+    color: initial;
+    border-radius: 1px;
+}
+.movie-icon2{
+    border-radius: 1px;
+    border: 1px solid #ffffff84;
+    padding: 0.5px 2px;
+    color:aliceblue;
+}
+.btn-watch{
+    transform: translate(0, 25rem);
+}
+
+
+            /* button  */
+button{
+    border-radius: 14px;
+    border-style: none;
+    border-top: 1px solid #a7f0ff5d;
+    border-bottom: 1px solid #c9f9ff97;
+    width: max-content;
+    background: #1b8ecc54;
+    color: var(--lavende-haze);
+    padding: 12px 22px;
+    font-size: 19px;
+    font-weight: 600;
+    transition: 0.26s ease-in-out;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+}
+button:hover{
+    transform: translate(0, -3px);
+}
+button:active{
+    background-color: rgba(47, 146, 239, 0.403);
+}
